@@ -13,6 +13,16 @@ class ViewController: NSViewController {
     let speechSynthesizer = NSSpeechSynthesizer()
 
     @IBOutlet var textView: NSTextView!
+    
+    // Refactoring result: `contents` computed property to represent the contents of Text View
+    var contents: String? {
+        get {
+            return textView.string
+        }
+        set {
+            textView.string = newValue
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

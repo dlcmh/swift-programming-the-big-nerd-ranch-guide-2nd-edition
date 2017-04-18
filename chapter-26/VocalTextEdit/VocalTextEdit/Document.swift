@@ -40,7 +40,8 @@ class Document: NSDocument {
         
         // Populate Text View with contents read from an opened file
         let viewController = windowController.contentViewController as! ViewController
-        viewController.textView.string = contentFromReadFile
+//        viewController.textView.string = contentFromReadFile // refactored to the version below
+        viewController.contents = contentFromReadFile
 
         self.addWindowController(windowController)
     }
@@ -51,7 +52,8 @@ class Document: NSDocument {
 //        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
         let windowController = windowControllers[0]
         let viewController = windowController.contentViewController as! ViewController
-        let contents = viewController.textView.string ?? ""
+//        let contents = viewController.textView.string ?? "" // refactored to the version below
+        let contents = viewController.contents ?? ""
         guard let data = contents.data(using: .utf8) else {
             throw Document.Error.UTF8Encoding
         }
