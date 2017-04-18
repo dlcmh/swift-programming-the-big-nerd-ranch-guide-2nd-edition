@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var itemTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    let todoList = TodoList() /* property that adds an instance of TodoList */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +27,11 @@ class ViewController: UIViewController {
 
 
     @IBAction func addButtonPressed(_ sender: UIButton) {
-        print("Add to-do item: \(String(describing: itemTextField.text))")
+//        print("Add to-do item: \(String(describing: itemTextField.text))")
+        guard let todo = itemTextField.text else { // checks that itemTextField.text is not nil
+            return
+        }
+        todoList.add(todo)
     }
 }
 
