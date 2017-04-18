@@ -9,6 +9,7 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    @IBOutlet var textView: NSTextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction func speakButtonClicked(_ sender: NSButton) {
-        print("The speak buton was clicked")
+        print("I should speak \(String(describing: textView.string))")
     }
 
     @IBAction func stopButtonClicked(_ sender: NSButton) {
