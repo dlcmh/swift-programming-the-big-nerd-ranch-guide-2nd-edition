@@ -22,11 +22,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZv-zQ-59a">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZv-zQ-59a">
                                 <rect key="frame" x="313" y="28" width="46" height="30"/>
                                 <state key="normal" title="Insert"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To-do Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-P6-t53">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To-do Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-P6-t53">
                                 <rect key="frame" x="16" y="28" width="289" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -39,6 +39,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="gZv-zQ-59a" secondAttribute="trailing" id="Gsl-0y-wg5"/>
                             <constraint firstItem="MeH-P6-t53" firstAttribute="baseline" secondItem="gZv-zQ-59a" secondAttribute="baseline" id="b7R-Ko-JIB"/>
                             <constraint firstItem="gZv-zQ-59a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cbd-sY-ApM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MeH-P6-t53" secondAttribute="leading" id="oTQ-a6-qA1"/>
                         </constraints>
                     </view>
                 </viewController>
