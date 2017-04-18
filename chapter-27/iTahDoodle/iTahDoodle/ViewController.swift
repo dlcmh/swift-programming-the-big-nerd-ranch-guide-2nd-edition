@@ -31,7 +31,9 @@ class ViewController: UIViewController {
 
     @IBAction func addButtonPressed(_ sender: UIButton) {
 //        print("Add to-do item: \(String(describing: itemTextField.text))")
-        guard let todo = itemTextField.text else { // checks that itemTextField.text is not nil
+        // https://github.com/apple/swift-evolution/blob/master/proposals/0099-conditionclauses.md
+        // http://stackoverflow.com/questions/29381994/swift-check-string-for-nil-empty
+        guard let todo = itemTextField.text, !todo.isEmpty else { // checks that itemTextField.text is not nil and not empty
             return
         }
         todoList.add(todo)
