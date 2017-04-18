@@ -693,9 +693,8 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYa-dV-sfe">
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYa-dV-sfe">
                                 <rect key="frame" x="304" y="222" width="81" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pp8-3v-aFL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -730,8 +729,10 @@
                             </scrollView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="bYa-dV-sfe" firstAttribute="baseline" secondItem="nvF-II-WOJ" secondAttribute="baseline" id="Tam-ZO-Rcx"/>
                             <constraint firstAttribute="trailing" secondItem="nvF-II-WOJ" secondAttribute="trailing" constant="20" id="UIE-RC-3rW"/>
                             <constraint firstItem="nvF-II-WOJ" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="20" id="eCP-sB-xfH"/>
+                            <constraint firstItem="nvF-II-WOJ" firstAttribute="leading" secondItem="bYa-dV-sfe" secondAttribute="trailing" constant="12" id="y11-Am-1hO"/>
                         </constraints>
                     </view>
                 </viewController>
