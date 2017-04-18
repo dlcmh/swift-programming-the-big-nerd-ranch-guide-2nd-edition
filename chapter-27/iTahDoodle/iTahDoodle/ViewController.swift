@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             return
         }
         todoList.add(todo)
+        tableView.reloadData()
     }
 }
 
