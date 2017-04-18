@@ -22,6 +22,12 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func speakButtonClicked(_ sender: NSButton) {
+        print("The speak buton was clicked")
+    }
 
+    @IBAction func stopButtonClicked(_ sender: NSButton) {
+        print("The stop button was clicked")
+    }
 }
 
