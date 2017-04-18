@@ -13,7 +13,8 @@ class ViewController: NSViewController {
     let speechSynthesizer = NSSpeechSynthesizer()
 
     @IBOutlet var textView: NSTextView!
-    @IBOutlet weak var speakButton: NSButton! // for setting the enabled property when speech starts
+    @IBOutlet weak var speakButton: NSButton! // for setting the enabled property when speech starts or stops
+    @IBOutlet weak var stopButton: NSButton! // for setting the enabled property when speech starts or stops
     
     // Refactoring result: `contents` computed property to represent the contents of Text View
     var contents: String? {
@@ -40,9 +41,11 @@ class ViewController: NSViewController {
     @IBAction func speakButtonClicked(_ sender: NSButton) {
         if let contents = textView.string, !contents.isEmpty {
             speakButton.isEnabled = false
+            stopButton.isEnabled = true
             speechSynthesizer.startSpeaking(contents)
         } else {
             speakButton.isEnabled = false
+            stopButton.isEnabled = true
             speechSynthesizer.startSpeaking("The document is empty.")
         }
     }
