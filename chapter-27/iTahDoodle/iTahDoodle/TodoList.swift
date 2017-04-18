@@ -9,6 +9,11 @@
 import UIKit
 
 class TodoList: NSObject {
+    override init() {
+        super.init()
+        loadItems()
+    }
+
     private let fileURL: URL = {
         let documentDirectoryURLs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         var documentDirectoryURL = documentDirectoryURLs.first!
