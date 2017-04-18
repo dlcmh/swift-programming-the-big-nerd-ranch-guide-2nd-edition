@@ -30,6 +30,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        speechSynthesizer.delegate = self
     }
 
     override var representedObject: Any? {
@@ -57,5 +58,13 @@ class ViewController: NSViewController {
     }
 
 
+}
+
+
+extension ViewController: NSSpeechSynthesizerDelegate {
+    func speechSynthesizer(_ sender: NSSpeechSynthesizer, didFinishSpeaking finishedSpeaking: Bool) {
+        speakButton.isEnabled = true
+        stopButton.isEnabled = false
+    }
 }
 
