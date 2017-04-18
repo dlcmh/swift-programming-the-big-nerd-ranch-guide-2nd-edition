@@ -9,6 +9,12 @@
 import UIKit
 
 class TodoList: NSObject {
+    private let fileURL: URL = {
+        let documentDirectoryURLs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        var documentDirectoryURL = documentDirectoryURLs.first!
+        return documentDirectoryURL.appendingPathComponent("todo")
+    }()
+
     fileprivate var items: [String] = []
     
     func add(_ item: String) {
