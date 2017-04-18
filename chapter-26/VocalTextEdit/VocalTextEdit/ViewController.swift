@@ -34,7 +34,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction func stopButtonClicked(_ sender: NSButton) {
-        print("The stop button was clicked")
+        speechSynthesizer.stopSpeaking()
     }
 }
 
