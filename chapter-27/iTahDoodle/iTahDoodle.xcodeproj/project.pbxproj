@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					1CC011911EA5992D00DA7AFA = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = RMA2F2SR2P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RMA2F2SR2P;
 				INFOPLIST_FILE = iTahDoodle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = davidchin.iTahDoodle;
@@ -276,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RMA2F2SR2P;
 				INFOPLIST_FILE = iTahDoodle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = davidchin.iTahDoodle;
