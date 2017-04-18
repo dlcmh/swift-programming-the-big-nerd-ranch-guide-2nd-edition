@@ -25,6 +25,12 @@ class TodoList: NSObject {
         }
     }
     
+    func loadItems() {
+        if let itemsArray = NSArray(contentsOf: fileURL) as? [String] {
+            items = itemsArray
+        }
+    }
+    
     func add(_ item: String) {
         items.append(item)
         saveItems()
