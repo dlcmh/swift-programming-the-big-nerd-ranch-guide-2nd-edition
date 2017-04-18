@@ -26,9 +26,8 @@
                                 <rect key="frame" x="313" y="28" width="46" height="30"/>
                                 <state key="normal" title="Insert"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To-do Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-P6-t53">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To-do Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-P6-t53">
                                 <rect key="frame" x="16" y="28" width="289" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -36,7 +35,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gZv-zQ-59a" firstAttribute="leading" secondItem="MeH-P6-t53" secondAttribute="trailing" constant="8" id="0kf-Cj-Yv6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gZv-zQ-59a" secondAttribute="trailing" id="Gsl-0y-wg5"/>
+                            <constraint firstItem="MeH-P6-t53" firstAttribute="baseline" secondItem="gZv-zQ-59a" secondAttribute="baseline" id="b7R-Ko-JIB"/>
                             <constraint firstItem="gZv-zQ-59a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cbd-sY-ApM"/>
                         </constraints>
                     </view>
