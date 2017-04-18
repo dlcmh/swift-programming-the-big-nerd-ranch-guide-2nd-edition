@@ -700,14 +700,13 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZT-1h-uGy">
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZT-1h-uGy">
                                 <rect key="frame" x="20" y="20" width="440" height="189"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <clipView key="contentView" ambiguous="YES" id="Xy2-nI-I34">
+                                <clipView key="contentView" id="Xy2-nI-I34">
                                     <rect key="frame" x="1" y="1" width="438" height="187"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView ambiguous="YES" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="kxN-kz-1BY">
+                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="kxN-kz-1BY">
                                             <rect key="frame" x="0.0" y="0.0" width="438" height="187"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -729,8 +728,12 @@
                             </scrollView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZZT-1h-uGy" secondAttribute="bottom" constant="20" id="6yX-Fr-EF4"/>
                             <constraint firstItem="bYa-dV-sfe" firstAttribute="baseline" secondItem="nvF-II-WOJ" secondAttribute="baseline" id="Tam-ZO-Rcx"/>
                             <constraint firstAttribute="trailing" secondItem="nvF-II-WOJ" secondAttribute="trailing" constant="20" id="UIE-RC-3rW"/>
+                            <constraint firstItem="ZZT-1h-uGy" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="20" id="ZcJ-kF-xxv"/>
+                            <constraint firstAttribute="trailing" secondItem="ZZT-1h-uGy" secondAttribute="trailing" constant="20" id="aNb-Rm-8BH"/>
+                            <constraint firstItem="ZZT-1h-uGy" firstAttribute="top" secondItem="nvF-II-WOJ" secondAttribute="bottom" constant="20" id="b1E-rx-Zlz"/>
                             <constraint firstItem="nvF-II-WOJ" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="20" id="eCP-sB-xfH"/>
                             <constraint firstItem="nvF-II-WOJ" firstAttribute="leading" secondItem="bYa-dV-sfe" secondAttribute="trailing" constant="12" id="y11-Am-1hO"/>
                         </constraints>
