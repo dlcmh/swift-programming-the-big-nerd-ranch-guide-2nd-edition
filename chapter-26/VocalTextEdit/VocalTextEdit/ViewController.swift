@@ -26,7 +26,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction func speakButtonClicked(_ sender: NSButton) {
-        if let contents = textView.string {
+        if let contents = textView.string, !contents.isEmpty {
             speechSynthesizer.startSpeaking(contents)
         } else {
             speechSynthesizer.startSpeaking("The document is empty.")
