@@ -686,8 +686,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvF-II-WOJ">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nvF-II-WOJ">
                                 <rect key="frame" x="385" y="222" width="81" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="AxJ-2A-ePY"/>
+                                </constraints>
                                 <buttonCell key="cell" type="push" title="Speak" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pOL-TD-SSi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -696,8 +699,11 @@
                                     <action selector="speakButtonClicked:" target="5gI-5U-AMq" id="Dk2-FO-sho"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYa-dV-sfe">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bYa-dV-sfe">
                                 <rect key="frame" x="304" y="222" width="81" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="5xc-PP-f38"/>
+                                </constraints>
                                 <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pp8-3v-aFL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -734,14 +740,14 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ZZT-1h-uGy" secondAttribute="bottom" constant="20" id="6yX-Fr-EF4"/>
-                            <constraint firstItem="bYa-dV-sfe" firstAttribute="baseline" secondItem="nvF-II-WOJ" secondAttribute="baseline" id="Tam-ZO-Rcx"/>
-                            <constraint firstAttribute="trailing" secondItem="nvF-II-WOJ" secondAttribute="trailing" constant="20" id="UIE-RC-3rW"/>
-                            <constraint firstItem="ZZT-1h-uGy" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="20" id="ZcJ-kF-xxv"/>
-                            <constraint firstAttribute="trailing" secondItem="ZZT-1h-uGy" secondAttribute="trailing" constant="20" id="aNb-Rm-8BH"/>
-                            <constraint firstItem="ZZT-1h-uGy" firstAttribute="top" secondItem="nvF-II-WOJ" secondAttribute="bottom" constant="20" id="b1E-rx-Zlz"/>
-                            <constraint firstItem="nvF-II-WOJ" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="20" id="eCP-sB-xfH"/>
-                            <constraint firstItem="nvF-II-WOJ" firstAttribute="leading" secondItem="bYa-dV-sfe" secondAttribute="trailing" constant="12" id="y11-Am-1hO"/>
+                            <constraint firstItem="ZZT-1h-uGy" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="20" symbolic="YES" id="0a6-hW-EWT"/>
+                            <constraint firstItem="bYa-dV-sfe" firstAttribute="baseline" secondItem="nvF-II-WOJ" secondAttribute="baseline" id="3Ld-xM-2GW"/>
+                            <constraint firstAttribute="trailing" secondItem="nvF-II-WOJ" secondAttribute="trailing" constant="20" symbolic="YES" id="3ow-7k-d9M"/>
+                            <constraint firstItem="nvF-II-WOJ" firstAttribute="leading" secondItem="bYa-dV-sfe" secondAttribute="trailing" constant="12" symbolic="YES" id="Gkg-T1-9Id"/>
+                            <constraint firstItem="nvF-II-WOJ" firstAttribute="trailing" secondItem="ZZT-1h-uGy" secondAttribute="trailing" id="IZh-nR-qxC"/>
+                            <constraint firstItem="ZZT-1h-uGy" firstAttribute="top" secondItem="bYa-dV-sfe" secondAttribute="bottom" constant="20" symbolic="YES" id="agE-5e-qit"/>
+                            <constraint firstItem="bYa-dV-sfe" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="20" symbolic="YES" id="bKg-aC-fwd"/>
+                            <constraint firstAttribute="bottom" secondItem="ZZT-1h-uGy" secondAttribute="bottom" constant="20" symbolic="YES" id="tWj-HV-IR6"/>
                         </constraints>
                     </view>
                     <connections>
