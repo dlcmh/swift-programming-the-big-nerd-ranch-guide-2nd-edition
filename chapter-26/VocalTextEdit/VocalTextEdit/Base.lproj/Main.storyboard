@@ -751,6 +751,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="speakButton" destination="nvF-II-WOJ" id="EVL-fU-NDa"/>
                         <outlet property="textView" destination="kxN-kz-1BY" id="hqC-48-PgQ"/>
                     </connections>
                 </viewController>
