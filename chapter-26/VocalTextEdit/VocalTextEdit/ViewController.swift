@@ -9,6 +9,7 @@
 import Cocoa
 
 class ViewController: NSViewController {
+
     let speechSynthesizer = NSSpeechSynthesizer()
 
     @IBOutlet var textView: NSTextView!
@@ -36,5 +37,7 @@ class ViewController: NSViewController {
     @IBAction func stopButtonClicked(_ sender: NSButton) {
         speechSynthesizer.stopSpeaking()
     }
+
+
 }
 
