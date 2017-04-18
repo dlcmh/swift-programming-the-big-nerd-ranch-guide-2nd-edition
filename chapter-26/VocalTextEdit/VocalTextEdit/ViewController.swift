@@ -51,6 +51,8 @@ class ViewController: NSViewController {
     }
 
     @IBAction func stopButtonClicked(_ sender: NSButton) {
+        speakButton.isEnabled = true
+        stopButton.isEnabled = false
         speechSynthesizer.stopSpeaking()
     }
 
