@@ -738,6 +738,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <progressIndicator hidden="YES" wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Slf-ET-iJf">
+                                <rect key="frame" x="20" y="230" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Anq-jT-iUQ"/>
+                                </constraints>
+                            </progressIndicator>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ZZT-1h-uGy" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="20" symbolic="YES" id="0a6-hW-EWT"/>
@@ -745,12 +751,15 @@
                             <constraint firstAttribute="trailing" secondItem="nvF-II-WOJ" secondAttribute="trailing" constant="20" symbolic="YES" id="3ow-7k-d9M"/>
                             <constraint firstItem="nvF-II-WOJ" firstAttribute="leading" secondItem="bYa-dV-sfe" secondAttribute="trailing" constant="12" symbolic="YES" id="Gkg-T1-9Id"/>
                             <constraint firstItem="nvF-II-WOJ" firstAttribute="trailing" secondItem="ZZT-1h-uGy" secondAttribute="trailing" id="IZh-nR-qxC"/>
+                            <constraint firstItem="kxN-kz-1BY" firstAttribute="top" secondItem="Slf-ET-iJf" secondAttribute="bottom" constant="23" id="LMi-mC-oPd"/>
                             <constraint firstItem="ZZT-1h-uGy" firstAttribute="top" secondItem="bYa-dV-sfe" secondAttribute="bottom" constant="20" symbolic="YES" id="agE-5e-qit"/>
                             <constraint firstItem="bYa-dV-sfe" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="20" symbolic="YES" id="bKg-aC-fwd"/>
                             <constraint firstAttribute="bottom" secondItem="ZZT-1h-uGy" secondAttribute="bottom" constant="20" symbolic="YES" id="tWj-HV-IR6"/>
+                            <constraint firstItem="Slf-ET-iJf" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="20" id="zGO-5O-Vxa"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressIndicator" destination="Slf-ET-iJf" id="uG6-rE-5q4"/>
                         <outlet property="speakButton" destination="nvF-II-WOJ" id="EVL-fU-NDa"/>
                         <outlet property="stopButton" destination="bYa-dV-sfe" id="Kgl-lw-XEU"/>
                         <outlet property="textView" destination="kxN-kz-1BY" id="hqC-48-PgQ"/>
